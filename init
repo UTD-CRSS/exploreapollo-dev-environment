@@ -4,8 +4,6 @@ set -euf -o pipefail
 
 hash git 2>/dev/null || { echo >&2 "I require git but it's not installed.  Aborting."; exit 1; }
 
-ssh -T git@github.com 2>/dev/null || { echo >&2 "Cannot connect to github via SSH. Check https://help.github.com/articles/generating-an-ssh-key/.  Aborting."; exit 1; }
-
 mkdir -p projects
 
 cd projects
