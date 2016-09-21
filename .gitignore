@@ -1,0 +1,7 @@
+### Vagrant template
+.vagrant/
+
+### Project Dirs
+
+/projects/*
+!/projects/.keep
