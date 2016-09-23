@@ -8,5 +8,15 @@ mkdir -p projects
 
 cd projects
 
-git clone git@github.com:UTD-CRSS/app.exploreapollo.org.git
-git clone git@github.com:UTD-CRSS/exploreapollo-api.git
+names=(
+  "app.exploreapollo.org"
+  "exploreapollo-api"
+)
+
+for name in ${names[@]}; do
+  if [ ! -d "$name" ]; then
+    git clone git@github.com:UTD-CRSS/$name.git
+  fi
+done
+
+echo "up and running."
