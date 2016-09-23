@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -ef -o pipefail
+#set -euo pipefail
+#IFS=$'\n\t'
 
 # grab essentials
 sudo apt-get update
